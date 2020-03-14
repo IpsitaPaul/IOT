@@ -20,6 +20,7 @@
         <td>
             <h2>Device data across dates</h2>
             <p></p>
+            <form>
               <div class="choose-deviceid">
                   Device
                   <select class="select" id="selectDevice">
@@ -29,19 +30,22 @@
               <p></p>
               <div class="choose-date">
                 <div class="select-start">
-                  Input date
+                  <label for="fname">Input date: </label>
                     <select class="select">
-                        <option disabled="" selected="" value="disabled">Loading...</option>
+                        <!--<option disabled="" selected="" value="disabled">Loading...</option>-->
+                        <input type="text" id="fname" name="fname">
                     </select>
                   </div>
                   <p></p>
                   <div class="select-end">
-                  Metric
+                    <label for="fname1">Metric: </label>
                     <select class="select-end">
-                        <option disabled="" selected="" value="disabled">Loading...</option>
+                        <!--<option disabled="" selected="" value="disabled">Loading...</option>-->
+                        <input type="text" id="fname1" name="fname1">
                     </select>
                   </div>
               </div>
+            </form>
           <p>
           <button class = "get-data" aria-label="Get Data">Generate Plot</button>
           </p>
