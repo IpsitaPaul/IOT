@@ -27,10 +27,10 @@ function updateText() {
   //update dates
   $.get(apiUrl + 'getdates', function(data) {
     $('.choose-date select').html(function() {
-      var str = '<option value="" disabled="" selected="">[choose date]</option>';
+      var str = '<input type="text" id="fname" name="fname" disabled="" selected="">[choose date]</input>';
       var dates = JSON.parse(data)
       for (var i = 0; i < dates.length; i++) {
-        str = str + '<option>' + dates[i] + '</option>';
+        str = str + '<input>' + dates[i] + '</input>';
       }
       return str;
     });
